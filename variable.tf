@@ -13,6 +13,11 @@ variable "instance_type" {
   default     =  "t2.micro"
 }
 
+variable "vpc_id" {
+  description = "VPC ID."
+  type        = string
+}
+
 variable "security_group" {
   description = "Name of security group"
   default     = "demo123_terraform"
