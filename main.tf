@@ -8,7 +8,10 @@ secret_key = "EBuETDJH1FFAYRuftdq91zgWhjVvW6mMCN+1vN21"
 resource "aws_security_group" "my_security_group" {
   name        = var.security_group
   description = "security group for Ec2 instance"
-  vpc_id      = aws_vpc.main.id
+  vpc_id      = "vpc-0449b2bf5af39015f"
+}
+
+
 
   ingress {
     from_port   = 8080
