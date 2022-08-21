@@ -3,6 +3,10 @@ region = var.aws_region
 access_key = "AKIAZ2I4M5UPVVOJRHFV"
 secret_key = "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"
 }
+ resource "aws_vpc" "main"{
+    vpc_id ="vpc-0449b2bf5af39015f"
+    cidr_block ="[172.31.0.0/16]"
+}
 
 
 #Create security group with firewall rules
