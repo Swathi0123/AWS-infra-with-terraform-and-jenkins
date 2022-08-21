@@ -4,11 +4,17 @@ access_key = "AKIAZ2I4M5UPVVOJRHFV"
 secret_key = "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"
 }
 
+ resource "aws_vpc" "main"
+  {
+    vpc_id ="vpc-0449b2bf5af39015f"
+    cidr_block ="172.31.0.0/16"
+}
+
 #Create security group with firewall rules
 resource "aws_security_group" "my_security_group" {
   name        = var.security_group
   description = "security group for Ec2 instance"
-  vpc_id      = "vpc-0449b2bf5af39015f"
+  
 }
 
 
