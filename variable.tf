@@ -16,7 +16,7 @@ variable "instance_type" {
 variable "security_group" {
   description = "Name of security group"
   default     = "demo123_terraform"
-  vpc_id      ="vpc-0449b2bf5af39015f"
+  
 }
 
 variable "tag_name" {
